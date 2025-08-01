@@ -3,9 +3,9 @@ import React from 'react';
 
 const News_ticker = () => {
   return (
-    <div className="flex items-center bg-[#f3f3f3] text-black text-sm font-medium py-2 overflow-hidden relative">
+    <div className="w-full flex items-center bg-[#f3f3f3] text-black text-sm font-medium py-2 overflow-hidden relative">
       {/* বাম দিকের লেবেল */}
-      <div className="bg-purple-700 text-white px-3 py-1 mr-2 rounded-r-md z-10">
+      <div className="bg-purple-700 text-white px-5  w-[130px] py-1 mr-2 rounded-r-md z-10">
         জরুরি ঘোষণা :
       </div>
 
