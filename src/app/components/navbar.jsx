@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-purple-800 to-purple-900 text-white shadow-md">
+    <nav className="bg-gradient-to-r from-purple-800 to-purple-900 text-white shadow-md sticky top-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-6 py-4">
        <ul className="flex items-center font-semibold text-[16px] relative  rounded-md ">
 
