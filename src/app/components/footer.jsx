@@ -18,7 +18,7 @@ const Footer = () => {
 
         {/* Column 1: School Info */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold mb-2">কায়েমপুর উচ্চ বিদ্যালয়</h2>
+          <h2 className="text-xl font-bold mb-2">রাজুরিয়া উচ্চ বিদ্যালয়</h2>
           <p className="text-sm mb-3">প্রধান শিক্ষক : মোঃ শামসুল হুদা</p>
           <div className="flex justify-center md:justify-start gap-4">
             <a href="#" aria-label="Facebook">
@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Column 2: Contact Info */}
         <div className="text-center md:border-l md:border-r px-4">
           <h3 className="font-semibold text-base mb-2">যোগাযোগ :</h3>
-          <p className="text-sm">কায়েমপুর, খানসামা, দিনাজপুর</p>
+          <p className="text-sm">রাজুরিয়া, খানসামা, দিনাজপুর</p>
           <p className="text-sm">মোবাইল : 01722938548</p>
           <p className="text-sm">
             ইমেইল :

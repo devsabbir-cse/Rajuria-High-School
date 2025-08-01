@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'; // You can replace wit
 
 const Carousel = () => {
   const images = [
-    '/carousel_img/img1.jpg',
+    '/carousel_img/img1.png',
     '/carousel_img/img2.jpg',
     '/carousel_img/img3.jpg',
     // Add more images if needed
