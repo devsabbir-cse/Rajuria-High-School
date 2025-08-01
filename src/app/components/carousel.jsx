@@ -26,7 +26,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="p-2 relative w-full mx-auto overflow-hidden ">
+    <div className="py-2 relative w-full mx-auto overflow-hidden ">
       {/* Image */}
       <img
         src={images[currentIndex]}
