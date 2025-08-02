@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <div className='flex justify-between gap-x-[20px]' >
       <div className="w-full mx-auto text-center mt-5">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">কৃতি শিক্ষার্থী</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-2">কর্মচারীবৃন্দ</h1>
         <div className="" />
         <Image src={img} alt="Contact" width={120} height={30} className='mx-auto'/>
        
@@ -18,7 +18,8 @@ const Page = () => {
                     <tr>
                       <th className="border p-2">ছবি</th>
                       <th className="border p-2">নাম</th>
-                      <th className="border p-2">ফলাফল</th>
+                      <th className="border p-2">পদবি</th>
+                      <th className="border p-2">মোবাইল</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -26,11 +27,12 @@ const Page = () => {
                       <tr key={item.id} className="text-center">
                         <td className="border p-2">{item.id}</td>
                         <td className="border p-2">{item.title}</td>
-                        <td className="border p-2">{item.date}</td>                     
+                        <td className="border p-2">{item.date}</td>  
+                        <td className="border p-2">{item.number}</td>                        
                       </tr>
                     ))}
                   </tbody>
-         </table>
+                </table>
 
 
 

@@ -37,9 +37,9 @@ const Navbar = () => {
               <ul className="absolute top-full left-0 mt-3 w-64 bg-purple-800 text-white shadow-2xl rounded-md z-50 overflow-hidden animate-fade-in">
                 <li><Link href="/aboutUs/principal-info" className="block px-6 py-3 hover:bg-purple-900">প্রধান শিক্ষকের তথ্য</Link></li>
                 <li><Link href="/aboutUs/about" className="block px-6 py-3 hover:bg-purple-900">প্রতিষ্ঠানের ইতিহাস</Link></li>
-                <li><Link href="/aboutUs/mission" className="block px-6 py-3 hover:bg-purple-900">প্রতিষ্ঠানের লক্ষ্য</Link></li>
-                <li><Link href="/aboutUs/teachers" className="block px-6 py-3 hover:bg-purple-900">শিক্ষকদের তালিকা</Link></li>
                 <li><Link href="/aboutUs/committee" className="block px-6 py-3 hover:bg-purple-900">পরিচালনা পর্ষদ</Link></li>
+                <li><Link href="/aboutUs/teachers" className="block px-6 py-3 hover:bg-purple-900">শিক্ষকদের তালিকা</Link></li>
+                <li><Link href="/aboutUs/stuff-information" className="block px-6 py-3 hover:bg-purple-900">কর্মচারীবৃন্দ</Link></li>
                 <li><Link href="/aboutUs/students-honor" className="block px-6 py-3 hover:bg-purple-900">কৃতি শিক্ষার্থী</Link></li>
               </ul>
             )}
