@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <div
-      className="relative w-full text-black h-[180px] bg-no-repeat bg-bottom bg-[length:100%]"
+      className="relative w-full text-black h-[180px] bg-no-repeat bg-bottom bg-[length:100%] mt-3"
       style={{
         backgroundImage: "url('/footer/footer.png')",
       }}

@@ -1,41 +1,15 @@
 import React from 'react';
 import { Bell } from 'lucide-react';
 import Link from 'next/link';
+import notice from '@/file/notice.json';
 
-const notices = [
-  {
-    id: 1,
-    title: "সরকারি ছুটির তালিকা ও প্রতিষ্ঠানসমূহের কার্যক্রম এর তথ্য অনলাইনে প্রকাশ করতে হবে",
-    link: "/notice/1"
-  },
-  {
-    id: 2,
-    title: "সকল শিক্ষক ও কর্মচারীদের প্রয়োজনীয় তথ্য ওয়েবসাইটে প্রকাশ বিষয়ে",
-    link: "/notice/2"
-  },
-  {
-    id: 3,
-    title: "সকল শ্রেণীর ক্লাস রুটিন ও শিক্ষার্থীদের ভর্তি প্রক্রিয়া ডিজিটাল প্রকাশ বিষয়ে",
-    link: "/notice/3"
-  },
-  {
-    id: 4,
-    title: "ভর্তি কার্যক্রম অনলাইন পরিচালনা ও আবেদন সংক্রান্ত তথ্য",
-    link: "/notice/4"
-  },
-  {
-    id: 5,
-    title: "সরকারি নির্দেশনার অনুরূপ প্রতিষ্ঠানসমূহের ডায়নামিক ওয়েবসাইট তৈরি বিষয়ে",
-    link: "/notice/5"
-  }
-];
 
 const NotishBorad = () => {
   return (
     <div className="w-[400px] max-w-md mx-auto p-4 bg-[#f6f3f3] shadow rounded">
       <h2 className="bg-orange-600 text-white text-center text-lg font-bold py-2 rounded-t">নোটিশ বোর্ড</h2>
       <ul className="divide-y divide-black">
-        {[...notices]
+        {[...notice]
           .sort((a, b) => b.id - a.id)
           .slice(0, 5)
           .map((notice) => (
@@ -53,6 +27,7 @@ const NotishBorad = () => {
         </Link>
       </div>
     </div>
+    
   );
 };
 

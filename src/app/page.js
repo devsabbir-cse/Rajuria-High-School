@@ -44,7 +44,7 @@ const scrollProps = {
 
 const page = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white '>
       <motion.div variants={fadeFrom.up} {...scrollProps}>
         <Carousel />
       </motion.div>
