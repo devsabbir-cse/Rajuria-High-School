@@ -1,8 +1,11 @@
 import React from 'react'
 
 const page = () => {
-  return (
-    <div>Routine</div>
+  return (    
+    <div>
+      <div>Routine</div>
+      <p>Under Developing...</p>
+    </div>
   )
 }
 
