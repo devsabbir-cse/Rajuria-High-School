@@ -1,4 +1,6 @@
-import './globals.css'
+import Footer from "@/app/global_components/footer";
+import MenuBar from "./components/MenuBar";
+import '@/app/globals.css'
 
 export const metadata = {
   title: "School",
@@ -9,9 +11,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-[1350px] mx-auto px-2  bg-white shadow-2xl text-gray-800 font-sans py-2 mb-5">
+
+        <div className="flex ">
+          <MenuBar />
+          {children}
+
+        </div>
         
-        {children}
-        
+         <Footer/>
       </body>
     </html>
   );
