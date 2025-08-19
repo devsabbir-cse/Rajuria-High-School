@@ -35,7 +35,7 @@ const News_ticker = ({ label = "জরুরি ঘোষণা :" }) => {
           '--endX': endX
         }}
       >
-                <span className="font-semibold text-black">এইটটি প্রকাশ বিষয়েঃ</span>
+                
         <span className="bg-blue-500 text-white px-2 py-0.5 rounded text-xs">
           September 29, 2023
         </span>

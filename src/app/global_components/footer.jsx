@@ -54,7 +54,7 @@ const Footer = () => {
           <p className="text-sm">পরিকল্পনা ও ব্যবস্থাপনায়</p>
           <p className="text-sm font-semibold">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</p>
           <p className="text-sm">
-            প্রযুক্তি সহায়তায় <span className="text-red-600 font-bold">টেক সাব্বির</span>
+            প্রযুক্তি সহায়তায় <span className="text-red-600 font-bold"><a href='https://devsabbir.vercel.app/'>টেক সাব্বির</a> </span>
           </p>
         </div>
       </div>
