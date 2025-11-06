@@ -1,12 +1,13 @@
-// app/pages/notice/pdfView/page.js
-"use client"; // ⚡ client-only
+"use client";
+import React, { useEffect, useState } from "react";
 
-import { useSearchParams } from "next/navigation";
-import React from "react";
+const ViewPdfPage = () => {
+  const [file, setFile] = useState("");
 
-export default function ViewPdfPage() {
-  const searchParams = useSearchParams();
-  const file = searchParams.get("file");
+  useEffect(() => {
+    const savedFile = localStorage.getItem("pdfFile");
+    if (savedFile) setFile(savedFile);
+  }, []);
 
   if (!file) {
     return <div className="text-center mt-10">❌ No PDF file specified.</div>;
@@ -23,7 +24,9 @@ export default function ViewPdfPage() {
         width="98%"
         height="1650px"
         className="border-2 border-gray-300 rounded-lg"
-      ></iframe>
+      />
     </div>
   );
-}
+};
+
+export default ViewPdfPage;
