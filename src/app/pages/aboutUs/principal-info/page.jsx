@@ -1,9 +1,8 @@
 // app/principal-info/page.jsx
 import React from 'react';
 import Side_Card_Data from '@/app/globalComponents/Side_Card_Data';
-import employee_Card from '@/app/globalComponents/employee_Card'
+import Employee_Card from '@/app/globalComponents/Employee_Card'
 import HeadMaster from '@/app/globalComponents/HeadMaster';
-
 
 const PrincipalInfo = () => {
       const head_teacher = {
@@ -26,7 +25,7 @@ const PrincipalInfo = () => {
     <div  className='flex justify-between gap-x-[20px]' >
         <div className="w-full  text-gray-800 font-sans mt-5">
           {/* Profile Image and Name */}
-          <employee_Card employee={head_teacher}/>
+          <Employee_Card employee={head_teacher}/>
         
         </div>
       <div>
