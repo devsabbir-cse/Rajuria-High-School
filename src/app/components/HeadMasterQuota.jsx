@@ -6,7 +6,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 const HeadMasterQuota = () => {
   return (
     <div>
-        <div className='mt-5 bg-violet-800 w-full h-[8px]'></div>
+        <div className='mt-5 bg-gradient-to-r from-indigo-500 to-purple-500 w-full h-[8px]'></div>
         <div className="w-full flex flex-col md:flex-row bg-[#f6f3f3]">
         
         
