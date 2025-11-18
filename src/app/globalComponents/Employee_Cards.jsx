@@ -7,7 +7,7 @@ const employee_Cards = ({ employee,type }) => {
    
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-4 gap-4 w-full justify-between h-[600px] overflow-y-auto">
       {employee.map((employee,index) => (
         <Link key={index} href={{
           pathname: `/pages/aboutUs/employeeDetails/${type}/${index}`,
@@ -17,9 +17,9 @@ const employee_Cards = ({ employee,type }) => {
             key={employee.id}
             className="mt-5 flex justify-center cursor-pointer"
           >
-            <div className="bg-white p-2 rounded-2xl shadow-[0_4px_15px_rgba(90,22,140,0.7)] w-[250px] transform transition duration-300 ease-in-out hover:scale-105">
+            <div className="bg-white p-1 rounded-2xl shadow-[0_4px_15px_rgba(90,22,140,0.7)]  transform transition duration-300 ease-in-out hover:scale-105">
               <Image
-                width={240}
+                width={300}
                 height={200}
                 src={employee.ছবি}
                 className="rounded-t-2xl"

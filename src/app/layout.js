@@ -2,6 +2,7 @@ import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import Navbar from "@/app/components/navbar";
 import "@/app/globals.css";
+import { ToastContainer } from 'react-toastify';
 
 export const metadata = {
   title: "School",
@@ -11,11 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[1350px] mx-auto px-2  bg-white shadow-2xl text-gray-800 font-sans py-2 mb-5">
-        <Header />
-        <Navbar />
-        {children}
-        <Footer />
+      <body>
+        <div>
+          <ToastContainer />
+          <div  className="w-[1350px] mx-auto px-2  bg-white shadow-2xl text-gray-800 font-sans py-2 mb-5">
+        
+          <Header />
+          <Navbar />
+          {children}
+          <Footer />
+
+          </div>
+        </div>
+        
+       
       </body>
     </html>
   );

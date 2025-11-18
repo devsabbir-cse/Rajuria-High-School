@@ -29,23 +29,16 @@ const page = () => {
     <div className="flex justify-between gap-x-6 w-full">
       {/* ====== Main Content ====== */}
       <div className="w-full bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-        <div className="text-center">
+        <div className="text-center mb-5">
           <h1 className="text-3xl font-bold text-indigo-700 mb-2 flex items-center justify-center gap-2">
             <GraduationCap className="text-indigo-500" /> শিক্ষার্থীর তথ্য
-          </h1>
-          <Image
-            src={img}
-            alt="Contact"
-            width={120}
-            height={30}
-            className="mx-auto mb-4"
-          />
+          </h1>          
         </div>
 
         {/* ====== Table ====== */}
         <div className="overflow-hidden rounded-xl border border-gray-200 shadow-md">
           <table className="w-full border-collapse">
-            <thead className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+            <thead className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-2xl">
               <tr>
                 <th className="p-3 border border-gray-300">শ্রেণি</th>
                 <th className="p-3 border border-gray-300">ছাত্র</th>
@@ -53,7 +46,7 @@ const page = () => {
                 <th className="p-3 border border-gray-300">মোট</th>
               </tr>
             </thead>
-            <tbody className="text-center text-gray-700">
+            <tbody className="text-center text-gray-700 text-xl">
               {classWise.map((item, index) => (
                 <tr
                   key={index}
@@ -83,13 +76,7 @@ const page = () => {
             </tbody>
           </table>
         </div>
-      </div>
-
-      {/* ====== Side Section ====== */}
-      <div className="">
-        <Side_Card_Data />
-        <HeadMaster />
-      </div>
+      </div>     
     </div>
   );
 };

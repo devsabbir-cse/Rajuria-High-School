@@ -32,22 +32,9 @@ const Page = () => {
                     ))}
                   </tbody>
                 </table>
-
-
-
-        <hr className="my-6 border-gray-300" />
-
-        <div className="flex justify-center items-center gap-2 text-sm text-gray-600 text-[14px]">
-          <Clock size={16} />
-          <span>শেষ হাল-নাগাদ করা হয়েছে: ২০২৩-১০-০২ ০৩:০৩:০৪</span>
-        </div>
       </div>
 
-      <div>
-        <Side_Card_Data/>
-        <HeadMaster/>
-
-      </div>
+     
 
     </div>
   );

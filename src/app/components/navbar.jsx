@@ -46,22 +46,7 @@ const Navbar = () => {
                     প্রধান শিক্ষকের তথ্য
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/pages/aboutUs/about"
-                    className="block px-6 py-3 hover:bg-purple-900"
-                  >
-                    প্রতিষ্ঠানের ইতিহাস
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pages/aboutUs/committee"
-                    className="block px-6 py-3 hover:bg-purple-900"
-                  >
-                    পরিচালনা পর্ষদ
-                  </Link>
-                </li>
+
                 <li>
                   <Link
                     href="/pages/aboutUs/teachers"
@@ -69,13 +54,32 @@ const Navbar = () => {
                   >
                     শিক্ষকবৃন্দ
                   </Link>
-                </li>
+                </li>               
+
+                <li>
+                  <Link
+                    href="/pages/aboutUs/committee"
+                    className="block px-6 py-3 hover:bg-purple-900"
+                  >
+                    পরিচালনা পর্ষদ
+                  </Link>
+                </li>                
+                
                 <li>
                   <Link
                     href="/pages/aboutUs/stuff-information"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     কর্মচারীবৃন্দ
+                  </Link>
+                </li>
+
+                 <li>
+                  <Link
+                    href="/pages/aboutUs/about"
+                    className="block px-6 py-3 hover:bg-purple-900"
+                  >
+                    প্রতিষ্ঠানের ইতিহাস
                   </Link>
                 </li>
                 {/* <li>
@@ -101,7 +105,7 @@ const Navbar = () => {
           </li>
 
           {/* একাডেমিক তথ্য */}
-          <li
+          {/* <li
             className="relative px-4  border-r border-white/30"
             onMouseEnter={() => handleMouseEnter("academic")}
             onMouseLeave={handleMouseLeave}
@@ -127,22 +131,22 @@ const Navbar = () => {
                     কম্পিউটার-ব্যবহার
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link
                     href="/pages/academicData/entry-post-list"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     শূণ্যপদের তালিকা
                   </Link>
-                </li> */}
-                {/* <li>
+                </li>
+                <li>
                   <Link
                     href="/pages/academicData/holiday-list"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     ছুটির তালিকা
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link
                     href="/pages/academicData/extracurricular"
@@ -153,7 +157,7 @@ const Navbar = () => {
                 </li>
               </ul>
             )}
-          </li>
+          </li> */}
 
           <li className="px-4  border-r border-white/30">
             <Link
@@ -168,7 +172,7 @@ const Navbar = () => {
               href="/pages/routine"
               className="hover:text-yellow-300 transition"
             >
-              রুটিন
+              ক্লাস রুটিন
             </Link>
           </li>
           <li className="px-4 border-r border-white/30">

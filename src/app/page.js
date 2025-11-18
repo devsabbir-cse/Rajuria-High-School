@@ -10,6 +10,9 @@ import NotishBorad from "@/app/globalComponents/NotishBorad";
 import HeadMasterQuota from "@/app/components/HeadMasterQuota";
 import Card_Data from "@/app/components/Card_Data";
 import Side_Card_Data from "@/app/globalComponents/Side_Card_Data";
+import Google_map from "./components/Google_map";
+import External_link from "./components/External_link";
+import SidebarSections from "./globalComponents/SidebarSections";
 
 // Variants for directional entry
 const fadeFrom = {
@@ -44,7 +47,7 @@ const scrollProps = {
 
 const page = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-100">
       <motion.div variants={fadeFrom.up} {...scrollProps}>
         <Carousel />
       </motion.div>
@@ -66,11 +69,20 @@ const page = () => {
         </div>
 
         <div className="space-y-4">
-          <motion.div variants={fadeFrom.down} {...scrollProps}>
+          {/* <motion.div variants={fadeFrom.down} {...scrollProps}>
             <NotishBorad />
           </motion.div>
           <motion.div variants={fadeFrom.up} {...scrollProps}>
-            {/* <Side_Card_Data /> */}
+            <Side_Card_Data />
+          </motion.div>
+          <motion.div variants={fadeFrom.up} {...scrollProps}>
+            <Google_map />
+          </motion.div>
+          <motion.div variants={fadeFrom.up} {...scrollProps}>
+            <External_link />
+          </motion.div> */}
+          <motion.div variants={fadeFrom.up} {...scrollProps}>
+            <SidebarSections />
           </motion.div>
         </div>
       </div>

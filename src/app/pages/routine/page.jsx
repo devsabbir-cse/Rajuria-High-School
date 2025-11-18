@@ -26,14 +26,11 @@ const Routine = () => {
   return (
     <div className="flex justify-between gap-x-6 w-full">
       {/* ====== Main Content ====== */}
-      <div className="w-full bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
-        <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-indigo-700 mb-2">
-            প্রকাশিত রুটিন
-          </h1>
-          <p className="text-gray-500 text-sm">
-            এই অংশে সকল শ্রেণির রুটিন ডাউনলোড করতে পারবেন
-          </p>
+      <div className="w-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
+        <div className="text-center ">
+          <h1 className="text-3xl font-bold text-[#5B168E] mb-5">
+            ক্লাস রুটিন
+          </h1>         
         </div>
 
         {/* ====== Routine Table ====== */}
@@ -79,11 +76,7 @@ const Routine = () => {
         </div>
       </div>
 
-      {/* ====== Side Section ====== */}
-      <div className="">
-        <Side_Card_Data />
-        <HeadMaster />
-      </div>
+    
     </div>
   );
 };

@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function employee_Card({ employee }) {
     const text1 ="w-1/2 text-[16px]"
     const text2 = "w-1/2 text-[16px] font-bold"
-    const div = "flex justify-between mb-3"
+    const div = "flex justify-between mb-5"
 
   return (
-    <div className="bg-[#5A168C] text-white p-8 rounded-2xl flex flex-col md:flex-row gap-10 items-center shadow-2xl max-w-5xl mx-auto">
+    <div className="bg-[#5A168C] text-white p-8 rounded-2xl flex flex-col md:flex-row gap-10 items-center shadow-2xl max-w-5xl mx-auto w-full">
       
       {/* Left Section - Image */}
       <div className="border-4 border-white rounded-xl overflow-hidden shadow-lg flex-shrink-0">

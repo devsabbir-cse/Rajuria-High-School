@@ -17,20 +17,9 @@ const Page = () => {
   };
 
   return (
-    <div className='flex justify-between gap-x-[20px] ' >
-
+    <div className='flex flex-col justify-between gap-x-[20px] ' >
+        <h1 className='flex justify-center text-3xl text-[#5B168E] font-bold py-2'>শিক্ষক বৃন্দ</h1>
       <Employee_Cards employee={teachers} type="teacher" />
-
-
-
-
-
-      <div>
-        <Side_Card_Data/>
-        {/* <HeadMaster/> */}
-
-      </div>
-
     </div>
   );
 };

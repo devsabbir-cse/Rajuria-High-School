@@ -25,14 +25,10 @@ export default function EmployeeDetails({ params }) {
 
   return (
     <div className="flex justify-between gap-x-[20px]">
-      <div className="w-full text-gray-800 font-sans mt-5">
+      <div className="w-full text-gray-800 font-sans">
         {/* Profile Image and Name */}
         <Employee_Card employee={employee} />
-      </div>
-      <div>
-        <Side_Card_Data />
-        <Side_Card_Data />
-      </div>
+      </div>      
     </div>
   );
 }

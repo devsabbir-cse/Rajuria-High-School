@@ -17,6 +17,18 @@ const NotishBorad = () => {
     }, 1000);
   }, []);
 
+  
+  const handleClick = (e, item) => {
+    e.preventDefault();
+
+    if (!item || !item.file_path) return;
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem("pdfFile", item.file_path);
+      router.push("/pages/notice/pdfView");
+    }
+  };
+
   return (
     <div className="w-[400px] max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
       {/* Header */}
@@ -41,7 +53,7 @@ const NotishBorad = () => {
                   <Bell className="text-white" size={18} />
                 </div>
                 <Link
-                  href={`/pages/notice/pdfView?file=${encodeURIComponent(notice.file_path)}`}
+                  onClick={(e) => handleClick(e, item)}
                   className="text-[18px] text-gray-800 font-medium hover:text-indigo-500 transition-colors duration-200 text-justify"
                 >
                   {notice.heading}
