@@ -160,7 +160,7 @@ const Navbar = () => {
               className="w-full text-left py-2 flex justify-between items-center"
             >
               <span>আমাদের সম্পর্কে</span>
-              <span>{mobileSubmenu ? "▴" : "▾"}</span>
+              <span className="text-3xl">{mobileSubmenu ? "▴" : "▾"}</span>
             </button>
 
             {mobileSubmenu && (

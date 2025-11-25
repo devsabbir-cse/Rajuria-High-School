@@ -35,7 +35,7 @@ export default function employee_Card({ employee }) {
         </div>
 
         {/* Two Columns */}
-        <div className="flex flex-col md:flex-row w-full md:gap-x-10 gap-y-6 md:gap-y-0">
+        <div className="flex flex-col md:flex-row w-full md:gap-x-10  md:gap-y-0">
 
             {/* Column 1 */}
             <div className="w-full md:w-1/2">
@@ -100,5 +100,3 @@ export default function employee_Card({ employee }) {
     </div>
   );
 }
-// https://drive.google.com/file/d/1VbMTtOBGQSA6mNWHQfkWIGRPPh67ZL9v/view?usp=sharing
-// https://drive.google.com/file/d/1tlCS1Rl7lBaf54QYe9CEg1MAhtBS7uNa/view?usp=sharing
