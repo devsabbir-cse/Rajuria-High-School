@@ -37,7 +37,7 @@ const Notice = () => {
 <div className="overflow-hidden rounded-xl border border-gray-200 shadow-md">
 
   {/* HEADER FIX */}
-  <div className="overflow-hidden">
+  <div className="overflow-hidden hidden md:block">
     <table className="w-[97.7%] table-fixed border-collapse">
       <thead className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
         <tr>
@@ -51,65 +51,99 @@ const Notice = () => {
   </div>
 
   {/* BODY SCROLL */}
-  <div className="h-[600px] overflow-y-scroll">
-    <table className="w-full table-fixed border-collapse">
-      <tbody className="text-center text-gray-700">
-        {notices.length > 0 ? (
-          notices.map((item, index) => (
-            <tr
-              key={item.index}
-              className={`transition duration-300 ${
-                index % 2 === 0
-                  ? "bg-gray-50 hover:bg-indigo-50"
-                  : "bg-white hover:bg-indigo-50"
-              }`}
-            >
-              <td className="p-3 border border-gray-200 font-medium w-[80px]">
-                {index + 1}
-              </td>
+{/* ====== BODY SCROLL ====== */}
+<div className="h-[600px] overflow-y-scroll">
 
-              <td className="p-3 border border-gray-200 text-left">
-                <a                  
-                  href={`https://drive.google.com/file/d/${item.file_path}/view`}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-gray-900 font-bold text-[22px] hover:text-purple-600 transition"
+  {/* Desktop Table */}
+  <table className="w-full table-fixed border-collapse hidden md:table">
+    <tbody className="text-center text-gray-700 ">
+      {notices.length > 0 ? (
+        notices.map((item, index) => (
+          <tr
+            key={item.index}
+            className={`transition duration-300 ${
+              index % 2 === 0 ? "bg-gray-50 hover:bg-indigo-50" : "bg-white hover:bg-indigo-50"
+            }`}
+          >
+            <td className="p-3 border border-gray-200 font-medium w-[80px]">
+              {index + 1}
+            </td>
+
+            <td className="p-3 border border-gray-200 text-left">
+              <a
+                href={`https://drive.google.com/file/d/${item.file_path}/view`}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-gray-900 font-bold text-[18px] hover:text-purple-600 transition"
+              >
+                {item.heading}
+              </a>
+            </td>
+
+            <td className="p-3 border border-gray-200 font-semibold text-[18px] w-[150px]">
+              {item.date}
+            </td>
+
+            <td className="p-3 border border-gray-200 text-xl w-[120px]">
+              {Number(item.downloadable) === 1 ? (
+                <a
+                  href={`https://drive.google.com/uc?export=download&id=${item.file_path}`}
+                  download
+                  className="text-indigo-600 hover:text-purple-700 transition"
                 >
-                  {item.heading}
+                  <RiFileDownloadFill className="text-[40px] inline" />
                 </a>
-              </td>
-
-              <td className="p-3 border border-gray-200 font-semibold text-[22px] w-[150px]">
-                {item.date}
-              </td>
-
-              <td className="p-3 border border-gray-200 text-xl w-[120px]">
-                {Number(item.downloadable) === 1 ? (
-                  <a
-                    // href={item.file_path}
-                    href={`https://drive.google.com/uc?export=download&id=${item.file_path}`} 
-                    download
-                    className="text-indigo-600 hover:text-purple-700 transition"
-                  >
-                    <RiFileDownloadFill className="text-[60px] inline" />
-                  </a>
-                ) : (
-                  <FaBan className="text-red-500 inline text-[60px]" />
-                )}
-              </td>
-            </tr>
-          ))
-        ) : (
-          <tr>
-            <td colSpan="4" className="text-center py-6 text-gray-500 italic">
-              কোনো নোটিশ পাওয়া যায়নি
+              ) : (
+                <FaBan className="text-red-500 inline text-[40px]" />
+              )}
             </td>
           </tr>
+        ))
+      ) : (
+        <tr>
+          <td colSpan="4" className="text-center py-6 text-gray-500 italic">
+            কোনো নোটিশ পাওয়া যায়নি
+          </td>
+        </tr>
+      )}
+    </tbody>
+  </table>
 
-        )}
-      </tbody>
-    </table>
+  {/* Mobile Card View */}
+  <div className="md:hidden space-y-4 px-2">
+    {notices.map((item, index) => (
+      <div
+        key={index}
+        className="bg-white p-4 rounded-xl shadow border border-gray-200"
+      >
+        <h2 className="text-lg font-bold text-[#5B168E] mb-2">
+          {index + 1}. {item.heading}
+        </h2>
+
+        <p className="text-gray-700 text-sm mb-1">
+          📅 প্রকাশের তারিখ: <span className="font-semibold">{item.date}</span>
+        </p>
+
+        <p className="text-gray-700 text-sm mb-3">
+          📘 ডাউনলোডঃ
+          {Number(item.downloadable) === 1 ? (
+            <a
+              href={`https://drive.google.com/uc?export=download&id=${item.file_path}`}
+              className="text-indigo-600 font-bold ml-2"
+              download
+            >
+              Download
+            </a>
+          ) : (
+            <span className="text-red-600 font-semibold ml-2">Not Available</span>
+          )}
+        </p>
+      </div>
+    ))}
   </div>
+
+</div>
+
 </div>
       </div>
 

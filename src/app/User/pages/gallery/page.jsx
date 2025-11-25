@@ -8,7 +8,7 @@ const Gallery = () => {
   const router = useRouter();
   const { galleryData, loading } = useGlobalData();
   const handleClick = (id) => {    
-    router.push(`/pages/gallery/details/${id}`);
+    router.push(`/User/pages/gallery/details/${id}`);
   };
 
 

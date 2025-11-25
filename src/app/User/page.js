@@ -40,13 +40,13 @@ const page = () => {
 
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 ">
       <motion.div variants={fadeFrom.up} {...scrollProps}>
         <Carousel />
       </motion.div>
 
-      <div className=" flex justify-between gap-x-[20px] mt-4">
-        <div className="space-y-4">
+      <div className=" md:flex justify-between gap-x-[20px] mt-4">
+        <div className="space-y-4 mb-2 md:w-[70%]">
           <motion.div variants={fadeFrom.left} {...scrollProps}>
             <News_ticker />
           </motion.div>
@@ -58,11 +58,11 @@ const page = () => {
           </motion.div>         
         </div>
 
-        {/* <div className="space-y-4">          
+        <div className="space-y-4 md:w-[30%] md:pr-2">          
           <motion.div variants={fadeFrom.up} {...scrollProps}>
             <SidebarSections />
           </motion.div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

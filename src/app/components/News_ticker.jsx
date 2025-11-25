@@ -9,6 +9,9 @@ const News_ticker = () => {
   const [endX, setEndX] = useState('-100%');
 
   useEffect(() => {
+    console.log(newsTicker.news,"newsTicker.news");
+    console.log(newsTicker,"newsTicker");
+    
     if (!newsTicker.length) return;
 
     if (contentRef.current) {

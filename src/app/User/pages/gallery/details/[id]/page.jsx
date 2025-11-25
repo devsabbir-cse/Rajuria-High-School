@@ -54,8 +54,8 @@ const params = useParams();
 
 
   return (
-    <div className=" px-4 flex justify-center items-center">
-      <div className="w-full bg-white shadow-2xl rounded-3xl p-6 md:p-10 text-gray-800 transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">
+    <div className="flex justify-center items-center">
+      <div className="w-full bg-white shadow-2xl rounded-3xl p-1 md:p-10 text-gray-800 transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 border-b-4 border-blue-300 inline-block pb-2">
           {item.title}
@@ -99,37 +99,37 @@ const params = useParams();
             )}
             {item.p4 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p4}
               </p>
             )}
             {item.p5 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p5}
               </p>
             )}
             {item.p6 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p6}
               </p>
             )}
             {item.p7 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p7}
               </p>
             )}
             {item.p8 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p8}
               </p>
             )}
             {item.p9 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p9}
               </p>
             )}
             {item.p10 && (
               <p className="text-[21px] text-gray-800 text-justify">
-                {item.p3}
+                {item.p10}
               </p>
             )}
           </div>
