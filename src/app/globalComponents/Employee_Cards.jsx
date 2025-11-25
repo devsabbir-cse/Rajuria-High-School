@@ -11,7 +11,7 @@ const employee_Cards = ({ employee,type }) => {
     <div className="grid grid-cols-3 gap-4 w-full justify-between h-[600px] overflow-y-auto">
       {employee.map((employee,index) => (
         <Link key={index} href={{
-          pathname: `/pages/aboutUs/employeeDetails/${type}/${index}`,
+          pathname: `/User/pages/aboutUs/employeeDetails/${type}/${index}`,
           query: { data: JSON.stringify(employee) },
         }}>
           <div
