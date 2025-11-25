@@ -24,7 +24,7 @@ const Routine = () => {
       {/* ====== Main Content ====== */}
       <div className="w-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
         <div className="text-center ">
-          <h1 className="text-3xl font-bold text-[#5B168E] mb-5">
+          <h1 className="text-3xl font-bold text-[#5B168E] mb-4 py-2">
             ক্লাস রুটিন
           </h1>         
         </div>

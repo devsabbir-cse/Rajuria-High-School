@@ -25,7 +25,7 @@ const Notice = () => {
   return (
     <div className="">
       {/* ====== Main Content ====== */}
-      <div className="w-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
+      <div className="w-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 ">
         {/* ====== Header ====== */}
         <div className="text-center py-3">
           <h1 className="text-3xl font-bold text-[#5B168E]">
@@ -34,7 +34,7 @@ const Notice = () => {
         </div>
 
         {/* ====== Table ====== */}
-<div className="overflow-hidden rounded-xl border border-gray-200 shadow-md">
+<div className="overflow-hidden rounded-xl border border-gray-200 shadow-md ">
 
   {/* HEADER FIX */}
   <div className="overflow-hidden hidden md:block">
@@ -110,7 +110,7 @@ const Notice = () => {
   </table>
 
   {/* Mobile Card View */}
-  <div className="md:hidden space-y-4 px-2">
+  <div className="md:hidden space-y-4 px-2 py-2">
     {notices.map((item, index) => (
       <div
         key={index}

@@ -27,9 +27,9 @@ const Gallery = () => {
       <h1 className="text-3xl font-bold mb-5 text-[#5B168E]">গ্যালারী</h1>
 
       {/* Scrollable Grid */}
-      <div className="h-[600px] overflow-y-auto">
+      <div className="h-[600px] overflow-y-auto py-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-          {galleryData.map((item,idx) => (
+          {galleryData.map((item) => (
             <div
               key={item.id}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:scale-[1.03] transition-transform duration-300 w-[250px] cursor-pointer hover:bg-gradient-to-r from-indigo-500 to-purple-500 hover:text-white"
