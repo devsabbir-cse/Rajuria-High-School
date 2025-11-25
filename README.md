@@ -37,3 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # school-management-system
 # school-management-system
 # rajuriahighschool
+# rajuriahighschool
