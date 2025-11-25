@@ -8,7 +8,7 @@ import { getTeachersData } from "@/app//Get-Data/teachers";
 import { getCommitteeData } from '@/app/Get-Data/committee';
 import { getStuffData } from '@/app/Get-Data/stuff';
 import { getHeadTeacherData } from "@/app/Get-Data/headTeacher";
-import { getNewsTickerData } from "@/app/Get-Data/newsTicker";
+import { getNewsTickerData } from "@/app/Get-Data/NewsTicker";
 
 
 const GlobalDataContext = createContext();
