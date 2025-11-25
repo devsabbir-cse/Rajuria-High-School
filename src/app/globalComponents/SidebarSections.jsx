@@ -30,16 +30,16 @@ const SidebarSections = () => {
 
   const { notices, loading } = useGlobalData();
 
-      if (loading) {
-        return (
-          <div className="flex flex-col items-center w-full mt-10 mb-10">
-            <ClipLoader color="#3B82F6" size={60} />
-            <p className="mt-3 text-gray-600 text-lg font-semibold animate-pulse">
-              Loading...
-            </p>
-          </div>
-        );
-      }
+      // if (loading) {
+      //   return (
+      //     <div className="flex flex-col items-center w-full mt-10 mb-10">
+      //       <ClipLoader color="#3B82F6" size={60} />
+      //       <p className="mt-3 text-gray-600 text-lg font-semibold animate-pulse">
+      //         Loading...
+      //       </p>
+      //     </div>
+      //   );
+      // }
   return (
     <div className="w-[400px] space-y-4">
 
