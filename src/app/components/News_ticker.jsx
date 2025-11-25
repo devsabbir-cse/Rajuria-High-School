@@ -41,7 +41,7 @@ const News_ticker = () => {
           '--endX': endX
         }}
       >
-        <span className="text-black">{Array.isArray(newsTicker) ? newsTicker[0]?.news : ""}</span>
+        <span className="text-black">{newsTicker[0].news}</span>
       </div>
 
       <style jsx>{`
