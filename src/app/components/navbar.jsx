@@ -143,11 +143,17 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="md:hidden bg-purple-900 text-white px-6 pb-6 space-y-3">
 
-          <Link href="/User" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             হোম
           </Link>
 
-          {/* Mobile submenu */}
           <div className="border-b border-white/20 pb-2">
             <button
               onClick={() => setMobileSubmenu(!mobileSubmenu)}
@@ -160,50 +166,141 @@ const Navbar = () => {
             {mobileSubmenu && (
               <ul className="ml-3 space-y-2">
                 <li className="border-b border-white/20 py-2">
-                  <Link href="/User/pages/aboutUs/principal-info">প্রধান শিক্ষকের তথ্য</Link>
+                  <Link 
+                    href="/User/pages/aboutUs/principal-info"
+                    className="block"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setMobileSubmenu(false);
+                    }}
+                  >
+                    প্রধান শিক্ষকের তথ্য
+                  </Link>
                 </li>
+
                 <li className="border-b border-white/20 py-2">
-                  <Link href="/User/pages/aboutUs/teachers">শিক্ষকবৃন্দ</Link>
+                  <Link 
+                    href="/User/pages/aboutUs/teachers"
+                    className="block"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setMobileSubmenu(false);
+                    }}
+                  >
+                    শিক্ষকবৃন্দ
+                  </Link>
                 </li>
+
                 <li className="border-b border-white/20 py-2">
-                  <Link href="/User/pages/aboutUs/committee">পরিচালনা পর্ষদ</Link>
+                  <Link 
+                    href="/User/pages/aboutUs/committee"
+                    className="block"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setMobileSubmenu(false);
+                    }}
+                  >
+                    পরিচালনা পর্ষদ
+                  </Link>
                 </li>
+
                 <li className="border-b border-white/20 py-2">
-                  <Link href="/User/pages/aboutUs/stuff-information">কর্মচারীবৃন্দ</Link>
+                  <Link 
+                    href="/User/pages/aboutUs/stuff-information"
+                    className="block"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setMobileSubmenu(false);
+                    }}
+                  >
+                    কর্মচারীবৃন্দ
+                  </Link>
                 </li>
+
                 <li className="py-2">
-                  <Link href="/User/pages/aboutUs/about">প্রতিষ্ঠানের ইতিহাস</Link>
+                  <Link 
+                    href="/User/pages/aboutUs/about"
+                    className="block"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setMobileSubmenu(false);
+                    }}
+                  >
+                    প্রতিষ্ঠানের ইতিহাস
+                  </Link>
                 </li>
               </ul>
             )}
-
           </div>
 
-          <Link href="/User/pages/student-info" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User/pages/student-info" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             শিক্ষার্থীর তথ্য
           </Link>
 
-          <Link href="/User/pages/admission" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User/pages/admission" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             ভর্তি কার্যক্রম
           </Link>
 
-          <Link href="/User/pages/routine" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User/pages/routine" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             ক্লাস রুটিন
           </Link>
 
-          <Link href="/User/pages/notice" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User/pages/notice" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             নোটিশ
           </Link>
 
-          <Link href="/User/pages/gallery" className="block py-2 border-b border-white/20">
+          <Link 
+            href="/User/pages/gallery" 
+            className="block py-2 border-b border-white/20"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             গ্যালারী
           </Link>
 
-          <Link href="/User/pages/contact" className="block py-2">
+          <Link 
+            href="/User/pages/contact" 
+            className="block py-2"
+            onClick={() => {
+              setMobileOpen(false);
+              setMobileSubmenu(false);
+            }}
+          >
             যোগাযোগ
           </Link>
         </div>
       )}
+
 
       <style jsx>{`
         @keyframes fade-in {
