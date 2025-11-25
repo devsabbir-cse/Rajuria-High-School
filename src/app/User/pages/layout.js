@@ -9,16 +9,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[1350px] mx-auto px-2 bg-gray-100 shadow-2xl text-gray-800 font-sans py-2 mb-5 "  >  
-            <div className="flex justify-between mt-5 gap-x-3">
-               <div className="w-full">
-                {children}
-              </div>
-              <div>
-                <SidebarSections />
-              </div> 
+      <body className="max-w-[1350px] mx-auto px-1 bg-gray-100 shadow-2xl text-gray-800 font-sans py-3 mb-5 overflow-x-hidden">
+
+        {/* Responsive Layout */}
+        <div className="flex flex-col lg:flex-row mt-5 gap-2">
+
+          {/* Main Content */}
+          <div className="w-full lg:w-[70%]">
+            {children}
+          </div>
+
+          {/* Sidebar */}
+          <div className="w-full lg:w-[30%] max-w-full overflow-hidden">
+            <div className="w-full overflow-y-auto">
+              <SidebarSections />
             </div>
-       
+          </div>
+
+        </div>
+
       </body>
     </html>
   );

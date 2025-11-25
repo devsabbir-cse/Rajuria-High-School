@@ -5,16 +5,16 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
   return (
     <div
-      className="relative w-full text-black h-[180px] bg-no-repeat bg-bottom bg-[length:100%] mt-3"
+      className="relative w-full bg-no-repeat bg-bottom bg-cover mt-3"
       style={{
         backgroundImage: "url('/footer/footer.png')",
       }}
     >
-      {/* 🔲 Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-white/70 z-0"></div>
 
-      {/* 🔳 Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 pt-10 pb-12 border-t border-gray-300">
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
 
         {/* Column 1: School Info */}
         <div className="text-center md:text-left">
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* Column 2: Contact Info */}
-        <div className="text-center md:border-l md:border-r px-4">
+        <div className="text-center md:text-left md:border-l md:border-r px-0 md:px-4 py-4 md:py-0">
           <h3 className="font-semibold text-base mb-2">যোগাযোগ :</h3>
           <p className="text-sm">রাজুরিয়া, খানসামা, দিনাজপুর</p>
           <p className="text-sm">মোবাইল : 01722938548</p>
@@ -50,13 +50,14 @@ const Footer = () => {
         </div>
 
         {/* Column 3: Credits */}
-        <div className="text-center md:text-right">
+        <div className="text-center md:text-right mt-4 md:mt-0">
           <p className="text-sm">পরিকল্পনা ও ব্যবস্থাপনায়</p>
           <p className="text-sm font-semibold">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</p>
           <p className="text-sm">
             প্রযুক্তি সহায়তায় <span className="text-red-600 font-bold"><a href='https://devsabbir.vercel.app/' target='_blank'>টেক সাব্বির</a> </span>
           </p>
         </div>
+
       </div>
     </div>
   );

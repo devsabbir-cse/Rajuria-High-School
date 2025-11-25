@@ -1,3 +1,5 @@
+import Papa from "papaparse";
+
 export const getStuffData = async () => {
   const sheetId = "1Sb8W_G2Mv8gD5T-f6C6mKq0p0dBy3img";
   const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv`;
@@ -6,18 +8,16 @@ export const getStuffData = async () => {
     const res = await fetch(url, { cache: "no-cache" });
     const csvText = await res.text();
 
-    const rows = csvText.split("\n").map(r => r.split(","));
+    // PapaParse দিয়ে CSV parse
+    const parsed = Papa.parse(csvText, {
+      header: true,       // First row → keys
+      skipEmptyLines: true,
+    });
 
-    const headers = rows[0];              // First row → keys
-    const data = rows.slice(1).map(row =>
-      Object.fromEntries(headers.map((key, i) => [key.trim(), row[i]?.trim()]))
-    );
-
-    return data;   // JSON return!
+    return parsed.data;   // Parsed JSON
 
   } catch (error) {
     console.error("Error fetching sheet data:", error);
     return null;
   }
 };
-// https://docs.google.com/spreadsheets/d/1Sb8W_G2Mv8gD5T-f6C6mKq0p0dBy3img/edit?usp=sharing&ouid=107666209853462231381&rtpof=true&sd=true

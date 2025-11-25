@@ -4,6 +4,7 @@ import Navbar from "@/app/components/navbar";
 import "@/app/globals.css";
 import { ToastContainer } from 'react-toastify';
 import { GlobalDataProvider } from "@/app/context/GlobalDataContext";
+import HeaderNavbar from "../components/HeaderNavbar";
 
 export const metadata = {
   title: "রাজুরিয়া উচ্চ বিদ্যালয়",

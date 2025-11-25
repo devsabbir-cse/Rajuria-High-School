@@ -25,7 +25,7 @@ export const GlobalDataProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log(getHeadTeacherData,"getHeadTeacherData");
+    console.log(getNewsTickerData,"getNewsTickerData");
     
     
     const loadAllData = async () => {

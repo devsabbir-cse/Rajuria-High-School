@@ -41,7 +41,7 @@ const SidebarSections = () => {
       //   );
       // }
   return (
-    <div className="w-[400px] space-y-4">
+    <div className="w-full space-y-4">
 
       {/* ===================== 1️⃣ Notice Board ===================== */}
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition">

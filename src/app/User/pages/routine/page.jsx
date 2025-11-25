@@ -34,7 +34,7 @@ const Routine = () => {
           <table className="w-full border-collapse">
             <thead className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-[24px]">
               <tr>
-                <th className="p-3 border border-gray-300">শিরোনাম</th>
+                <th className="p-3 border border-gray-300">ক্লাস</th>
                 <th className="p-3 border border-gray-300">প্রকাশের তারিখ</th>
                 <th className="p-3 border border-gray-300">ডাউনলোড</th>
               </tr>

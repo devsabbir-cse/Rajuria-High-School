@@ -10,10 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[1350px] mx-auto px-2 bg-white shadow-2xl text-gray-800 font-sans py-2 mb-5">
+      <body className="w-full bg-white text-gray-800 font-sans min-h-screen">
         <GlobalDataProvider>
           <ToastContainer/>
-          {children}
+          <div className="max-w-[1350px] mx-auto px-1 sm:px-1 md:px-1">
+            {children}
+          </div>
         </GlobalDataProvider>
       </body>
     </html>

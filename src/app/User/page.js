@@ -48,7 +48,7 @@ const page = () => {
       <div className=" flex justify-between gap-x-[20px] mt-4">
         <div className="space-y-4">
           <motion.div variants={fadeFrom.left} {...scrollProps}>
-            {/* <News_ticker /> */}
+            <News_ticker />
           </motion.div>
           <motion.div variants={fadeFrom.right} {...scrollProps}>
             <About_School />
@@ -58,11 +58,11 @@ const page = () => {
           </motion.div>         
         </div>
 
-        <div className="space-y-4">          
+        {/* <div className="space-y-4">          
           <motion.div variants={fadeFrom.up} {...scrollProps}>
             <SidebarSections />
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
