@@ -143,17 +143,6 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="md:hidden bg-purple-900 text-white px-6 pb-6 space-y-3">
 
-          <Link 
-            href="/User" 
-            className="block py-2 border-b border-white/20"
-            onClick={() => {
-              setMobileOpen(false);
-              setMobileSubmenu(false);
-            }}
-          >
-            হোম
-          </Link>
-
           <div className="border-b border-white/20 pb-2">
             <button
               onClick={() => setMobileSubmenu(!mobileSubmenu)}

@@ -23,11 +23,11 @@ const Notice = () => {
 
 
   return (
-    <div className="flex justify-between gap-x-6 w-full">
+    <div className="">
       {/* ====== Main Content ====== */}
       <div className="w-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300">
         {/* ====== Header ====== */}
-        <div className="text-center mb-5">
+        <div className="text-center py-3">
           <h1 className="text-3xl font-bold text-[#5B168E]">
             নোটিশ বোর্ড
           </h1>          

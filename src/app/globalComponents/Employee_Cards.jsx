@@ -8,7 +8,7 @@ const employee_Cards = ({ employee,type }) => {
    
 
   return (
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-4 w-full justify-between h-[600px] overflow-y-auto">
+    <div className="grid md:grid-cols-3 grid-cols-1 gap-4 w-full justify-between h-[600px] overflow-y-auto py-3">
       {employee.map((employee,index) => (
         <Link key={index} href={{
           pathname: `/User/pages/aboutUs/employeeDetails/${type}/${index}`,
