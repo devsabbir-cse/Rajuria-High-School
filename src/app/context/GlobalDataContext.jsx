@@ -8,7 +8,7 @@ import { getTeachersData } from "@/app//Get-Data/teachers";
 import { getCommitteeData } from '@/app/Get-Data/committee';
 import { getStuffData } from '@/app/Get-Data/stuff';
 import { getHeadTeacherData } from "@/app/Get-Data/headTeacher";
-import { getNewsTickerData } from "@/app/Get-Data/NewsTicker";
+import { getNewsTickerData } from "@/app/Get-Data/newsTicker";
 
 const GlobalDataContext = createContext();
 
@@ -66,7 +66,7 @@ export const GlobalDataProvider = ({ children }) => {
 
 
   return (
-    <GlobalDataContext.Provider value={{ notices, routines, classWise, galleryData, teachers, committee, stuff, headTeacher, newsTicker,  loading,refreshHeadTeacher }}>
+    <GlobalDataContext.Provider value={{ notices, routines, classWise, galleryData, teachers, committee, stuff, headTeacher, newsTicker,  loading, refreshHeadTeacher }}>
       {children}
     </GlobalDataContext.Provider>
   );

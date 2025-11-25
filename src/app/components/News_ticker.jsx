@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
-import { useGlobalData } from './../context/GlobalDataContext';
+import { useGlobalData } from '@/app/context/GlobalDataContext';
 
 const News_ticker = () => {
   const { newsTicker } = useGlobalData();
@@ -42,7 +42,7 @@ const News_ticker = () => {
           '--endX': endX
         }}
       >
-        <span className="text-black">{newsTicker.news}</span>
+        <span className="text-black">{Array.isArray(newsTicker) ? newsTicker[0]?.news : ""}</span>
       </div>
 
       <style jsx>{`

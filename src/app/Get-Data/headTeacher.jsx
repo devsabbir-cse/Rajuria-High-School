@@ -13,7 +13,6 @@ export const getHeadTeacherData = async () => {
       header: true,       // First row → keys
       skipEmptyLines: true,
     });
-
     return parsed.data;   // Parsed JSON
 
   } catch (error) {
