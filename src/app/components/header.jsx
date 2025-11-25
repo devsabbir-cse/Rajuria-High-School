@@ -25,10 +25,10 @@ const Header = () => {
 
         {/* Centered Text */}
         <div className="text-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          <h1 className="text-md md:text-4xl font-bold mb-1 md:mb-2 text-[rgb(103,49,143)]">
+          <h1 className="text-lg md:text-4xl font-bold mb-1 md:mb-2 text-[rgb(103,49,143)]">
             <Link href="/User">রাজুরিয়া উচ্চ বিদ্যালয়</Link>
           </h1>
-          <h2 className="text-sm md:text-2xl mb-2 md:mb-3 font-bold text-[rgb(103,49,143)]">
+          <h2 className="text-md md:text-2xl mb-2 md:mb-3 font-bold text-[rgb(103,49,143)]">
             রাজুরিয়া, বিরল, দিনাজপুর
           </h2>
           <p className="text-sm md:text-lg bg-[rgb(103,49,143)] inline-block px-3 py-1 md:px-4 md:py-2 rounded-full text-white font-semibold">
