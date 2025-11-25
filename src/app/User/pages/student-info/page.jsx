@@ -43,10 +43,10 @@ const Page = () => {
 
   return (
     <div className="flex justify-between gap-x-6 w-full mb-5">
-      <div className="w-full bg-white md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+      <div className="w-full bg-white md:p-5 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
         <div className="text-center mb-5">
           <h1 className="text-3xl font-bold text-indigo-700 mb-2 flex items-center justify-center gap-2">
-            <GraduationCap className="text-indigo-500 py-2 text-3xl" /> শিক্ষার্থীর তথ্য
+            <GraduationCap size={60} className="text-indigo-500 " /> শিক্ষার্থীর তথ্য
           </h1>
         </div>
 
