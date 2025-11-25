@@ -4,13 +4,12 @@ import React, { useState, useEffect } from "react";
 import { Bell } from "lucide-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
-import noticeJson  from "@/app/Json/notice-data.json";
 import { FaMapMarkedAlt  } from "react-icons/fa";
 import { AiFillNotification } from "react-icons/ai";
-
+import { useGlobalData } from "@/app/context/GlobalDataContext";
+import { ClipLoader } from "react-spinners";
 const SidebarSections = () => {
-     const noticeData = [...noticeJson].reverse();
-  // Which section is open? default = notice
+
   const [open, setOpen] = useState("notice");
 
   const toggle = (section) => {
@@ -29,16 +28,18 @@ const SidebarSections = () => {
     { name: "বাংলাদেশ জাতীয় তথ্য বাতায়ন", url: "https://bangladesh.gov.bd/" },
   ];
 
-  const [notices, setNotices] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { notices, loading } = useGlobalData();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setNotices(noticeData);
-      setLoading(false);
-    }, 500);
-  }, []);
-
+      if (loading) {
+        return (
+          <div className="flex flex-col items-center w-full mt-10 mb-10">
+            <ClipLoader color="#3B82F6" size={60} />
+            <p className="mt-3 text-gray-600 text-lg font-semibold animate-pulse">
+              Loading...
+            </p>
+          </div>
+        );
+      }
   return (
     <div className="w-[400px] space-y-4">
 

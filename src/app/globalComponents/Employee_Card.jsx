@@ -4,18 +4,19 @@ export default function employee_Card({ employee }) {
     const text1 ="w-1/2 text-[16px]"
     const text2 = "w-1/2 text-[16px] font-bold"
     const div = "flex justify-between mb-5"
+    
 
   return (
     <div className="bg-[#5A168C] text-white p-8 rounded-2xl flex flex-col md:flex-row gap-10 items-center shadow-2xl max-w-5xl mx-auto w-full">
       
       {/* Left Section - Image */}
-      <div className="border-4 border-white rounded-xl overflow-hidden shadow-lg flex-shrink-0">
+      <div className="border-4 border-white rounded-xl overflow-hidden shadow-lg flex-shrink-0 w-[200px] h-[250px]">
         <Image
-          src={employee.ছবি}
+          src={`https://drive.google.com/uc?export=download&id=${employee.ছবি}`}        
           alt={employee.নাম}
           width={200}
-          height={200}
-          className="object-cover"
+          height={250}
+          className="object-cover w-full h-full"
         />
       </div>
 
@@ -100,3 +101,5 @@ export default function employee_Card({ employee }) {
     </div>
   );
 }
+// https://drive.google.com/file/d/1VbMTtOBGQSA6mNWHQfkWIGRPPh67ZL9v/view?usp=sharing
+// https://drive.google.com/file/d/1tlCS1Rl7lBaf54QYe9CEg1MAhtBS7uNa/view?usp=sharing

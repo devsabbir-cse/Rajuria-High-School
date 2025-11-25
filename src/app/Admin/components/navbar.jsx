@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="max-w-7xl flex mx-auto px-6 py-4">
         <ul className="flex items-center font-semibold text-[16px] relative  rounded-md ">
           <li className="px-4  border-r border-white/30">
-            <Link href="/User" className="hover:text-yellow-300 transition">
+            <Link href="/Admin" className="hover:text-yellow-300 transition">
               প্রচ্ছদ
             </Link>
           </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
               <ul className="absolute top-full left-0 mt-3 w-64 bg-purple-800 text-white shadow-2xl rounded-md z-50 overflow-hidden animate-fade-in">
                 <li>
                   <Link
-                    href="/User/pages/aboutUs/principal-info"
+                    href="/Admin/pages/aboutUs/principal-info"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     প্রধান শিক্ষকের তথ্য
@@ -49,7 +49,7 @@ const Navbar = () => {
 
                 <li>
                   <Link
-                    href="/User/pages/aboutUs/teachers"
+                    href="/Admin/pages/aboutUs/teachers"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     শিক্ষকবৃন্দ
@@ -58,7 +58,7 @@ const Navbar = () => {
 
                 <li>
                   <Link
-                    href="/User/pages/aboutUs/committee"
+                    href="/Admin/pages/aboutUs/committee"
                     className="block px-6 py-3 hover:bg-purple-900"
                   >
                     পরিচালনা পর্ষদ

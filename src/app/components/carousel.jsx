@@ -35,6 +35,7 @@ const Carousel = () => {
           alt={`Slide ${currentIndex + 1}`}
           fill
           className="object-cover transition duration-700 ease-in-out"
+          priority 
         />
       </div>
 

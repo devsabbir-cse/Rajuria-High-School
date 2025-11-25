@@ -1,0 +1,35 @@
+CREATE TABLE headTeacher (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    PDS_id VARCHAR(50),
+    পদবী VARCHAR(100),
+    নাম VARCHAR(150),
+    ফোন VARCHAR(50),
+    ইমেইল VARCHAR(100),
+    ঠিকানা TEXT,
+    শিক্ষাগত_যোগ্যতা TEXT,
+    ট্রেনিং TEXT,
+    জাতীয়তা VARCHAR(50),
+    জাতীয়_পরিচয়_নং VARCHAR(50),
+    জন্মতারিখ VARCHAR(50),
+    রক্তের_গ্রুপ VARCHAR(10),
+    যোগদানের_তারিখ VARCHAR(50),
+    ছবি TEXT
+);
+INSERT INTO headTeacher (
+    PDS_id, পদবী, নাম, ফোন, ইমেইল, ঠিকানা, শিক্ষাগত_যোগ্যতা, ট্রেনিং, জাতীয়তা, জাতীয়_পরিচয়_নং, জন্মতারিখ, রক্তের_গ্রুপ, যোগদানের_তারিখ, ছবি
+) VALUES (
+    'PDS123', 
+    'Head Teacher', 
+    'মোঃ আব্দুল করিম', 
+    '017XXXXXXXX', 
+    'abdul.karim@email.com', 
+    'Dhaka, Bangladesh', 
+    'M.Ed', 
+    'Leadership Training', 
+    'Bangladeshi', 
+    '1234567890123', 
+    '1975-05-12', 
+    'O+', 
+    '2005-01-01', 
+    'https://example.com/images/abdul_karim.jpg'
+);

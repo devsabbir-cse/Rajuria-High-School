@@ -1,6 +1,7 @@
+import Footer from "@/app/components/footer";
+import Header from "@/app/components/header";
+import Navbar from "@/app/Admin/components/navbar";
 import "@/app/globals.css";
-import { ToastContainer } from 'react-toastify';
-import { GlobalDataProvider } from "./context/GlobalDataContext";
 
 export const metadata = {
   title: "রাজুরিয়া উচ্চ বিদ্যালয়",
@@ -10,12 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[1350px] mx-auto px-2 bg-white shadow-2xl text-gray-800 font-sans py-2 mb-5">
-        <GlobalDataProvider>
-          <ToastContainer/>
+      <body >  
+          <Header />
+          <Navbar />
           {children}
-        </GlobalDataProvider>
+          <Footer />
       </body>
     </html>
   );
 }
+
