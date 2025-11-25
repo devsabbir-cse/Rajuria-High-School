@@ -8,12 +8,18 @@ export const getNewsTickerData = async () => {
     const res = await fetch(url, { cache: "no-cache" });
     const csvText = await res.text();
 
-    // PapaParse দিয়ে CSV parse
-    const parsed = Papa.parse(csvText, {
-      header: true,       // First row → keys
+    // FIX: remove empty / null / BOM lines
+    const cleanCSV = csvText
+      .split("\n")
+      .filter(line => line && line.trim() !== "")
+      .join("\n");
+
+    const parsed = Papa.parse(cleanCSV, {
+      header: true,
       skipEmptyLines: true,
     });
-    return parsed.data;   // Parsed JSON
+
+    return parsed.data;
 
   } catch (error) {
     console.error("Error fetching sheet data:", error);
